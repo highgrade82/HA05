@@ -1,0 +1,60 @@
+package blatt05;
+
+public class Kunde {
+  //TODO Aufgabe 2.
+
+	private static int kundenNr;
+	private static String name;
+	private static String nachname;
+	private static String adresse;
+	private static Datum datum;
+	
+	Kunde(int kundenNr, String name, String nachname, String adresse, Datum datum){
+		this.setkundenNr(kundenNr);
+		this.setname(name);
+		this.setnachname(nachname);
+		this.setadresse(adresse);
+		this.setdatum(datum);
+	
+	}
+
+	public static int getkundenNr() {
+		return kundenNr;
+	}
+
+	public void setkundenNr(int kundenNr) {
+		kundenNr = kundenNr;
+	}
+
+	public static String getname() {
+		return name;
+	}
+
+	public void setname(String name) {
+		name = name;
+	}
+
+	public static String getnachname() {
+		return nachname;
+	}
+
+	public void setnachname(String nachname) {
+		nachname = nachname;
+	}
+
+	public static String getadresse() {
+		return adresse;
+	}
+
+	public void setadresse(String adresse) {
+		adresse = adresse;
+	}
+
+	public static Datum getdatum() {
+		return datum;
+	}
+
+	public void setdatum(Datum datum) {
+		datum = datum;
+	}
+}
