@@ -1,0 +1,28 @@
+package blatt05;
+
+public class Getraenk extends Produkt{
+
+    private double alkoholGehalt;
+
+    public Getraenk(int nummer, String name, double preis, double alkoholGehalt) {
+  super(nummer, name, preis);
+	this.alkoholGehalt = alkoholGehalt;
+    }   
+
+    public double getAlkoholGehalt() {
+	return alkoholGehalt;
+    }
+
+    public void setAlkoholGehalt(double alkoholGehalt) {
+	this.alkoholGehalt = alkoholGehalt;
+    }
+
+    @Override
+    public double berechneSteuer() {
+	if(alkoholGehalt>0.0){
+	    return super.getPreis()*0.21;
+	}else{
+	return super.getPreis()*0.19;
+	}
+    }
+}
