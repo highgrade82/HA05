@@ -1,0 +1,30 @@
+package blatt05;
+
+public class Getraenk extends Produkt {
+  
+	private int alkoholGehalt;
+	private double Steuer;
+	private double Nettopreis;
+	
+	Getraenk(){ //int alkoholGehalt
+		super(getProduktNr(),getName(),getPreis());
+		this.alkoholGehalt = alkoholGehalt ;
+	}
+	
+	public double berechneSteuer(){
+	
+		Nettopreis = this.getPreis();
+		
+		if(alkoholGehalt>0)
+			{
+				Steuer = Nettopreis * 0.21;
+			}
+		else
+			{
+				Steuer = Nettopreis * 0.19;
+			}
+		
+		return Steuer;
+	}
+	
+}
