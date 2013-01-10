@@ -1,0 +1,25 @@
+package blatt05;
+
+public class Nahrungsmittel extends Produkt{
+
+  // 7% addieren auf Nettopreis
+	
+	//produktNr,name,preis
+	
+	}
+
+	private double Steuer;
+	private double Nettopreis;
+	
+	public double berechneSteuer(){
+		
+		Nettopreis = this.getPreis();
+		
+		Steuer = Nettopreis * 0.07;
+		
+		return Steuer;
+	}
+	
+	
+	
+}
